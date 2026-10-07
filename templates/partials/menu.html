@@ -1,0 +1,6 @@
+{% load books_extras %}
+<nav>
+    <a href="{% url 'product_list' %}">Список книг</a> | 
+    <a href="{% url 'product_add' %}">Додати книгу</a> | 
+    <span>Товарів у базі: {% product_count %}</span>
+</nav>
